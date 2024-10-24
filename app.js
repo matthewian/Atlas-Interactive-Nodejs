@@ -1,18 +1,16 @@
-var http = require('http')
-var url = require('url')
-var fs = require('fs')
-//var dateTimeModule = require('./Modules/dateTimeModule')
+const express = require('express')
+const app = express()
+const port = '8100'
 
-http.createServer(function (req, res) {
-    var q = url.parse(req.url, true);
-    var filename = "." + q.pathname;
-    fs.readFile(filename, function(err, data) {
-        if (err) {
-        res.writeHead(404, {'Content-Type': 'text/html'});
-        return res.end("404 Not Found");
-        } 
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write(data);
-        return res.end();
-    });
-}).listen(8100)
+app.set('view engine', 'ejs')
+app.use(express.static('public'));
+
+app.get('/', (req, res) => res.render('pages/home', { }))
+app.get('/about', (req, res) => res.render('pages/about', { }))
+app.get('/contact', (req, res) => res.render('pages/contact', { }))
+app.get('/capabilities', (req, res) => res.render('pages/capabilities', { }))
+app.get('/work', (req, res) => res.render('pages/work', { }))
+
+app.listen(port, () => {
+    console.log(`App listening on port: ${port}`)
+})
