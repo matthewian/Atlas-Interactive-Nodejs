@@ -10,6 +10,7 @@ app.get('/about', (req, res) => res.render('pages/about', { }))
 app.get('/contact', (req, res) => res.render('pages/contact', { }))
 app.get('/capabilities', (req, res) => res.render('pages/capabilities', { }))
 app.get('/work', (req, res) => res.render('pages/work', { }))
+app.get('/resume', (req, res) => res.render('pages/resume', { }))
 
 app.listen(port, () => {
     console.log(`App listening on port: ${port}`)
