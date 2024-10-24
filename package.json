@@ -4,18 +4,12 @@
   "description": "node version: 23.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "netlify-lambda serve src",
-    "build": "netlify-lambda build src"
+    "start": "node app.js"    
   },
   "author": "Matt Weeks",
   "license": "ISC",
-  "dependencies": {
-    "@netlify/functions": "^2.8.2",
-    "@types/express": "^5.0.0",
+  "dependencies": {    
     "ejs": "^3.1.10",
-    "express": "^4.21.1",
-    "netlify-cli": "^17.37.1",
-    "netlify-lambda": "^2.0.16",
-    "serverless-http": "^3.2.0"
+    "express": "^4.21.1"
   }
 }
