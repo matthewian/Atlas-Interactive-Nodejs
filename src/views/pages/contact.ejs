@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact | Atlas Sage</title>
-        <link rel="stylesheet" href="styles/app.css">
+        <%- include('../components/head') %>
+        <title>Contact | Atlas Sage</title>        
     </head>
     <body>        
         <%- include('../components/navigation') %>
-        <div>
-            <h1>Contact Atlas Sage</h1>
-            <h2>Discover your websites destination.</h2>
+        <div class="contact page">
+            <div class="hero">
+                <div class="hero-content padding">
+                    <h1>Contact Us</h1>
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="form">
+                <div class="form-header">
+                    <h3>Tell us more about you</h3>
+                </div>
+                <div class="form-body">
+                    <form>
+                        <input type="text" id="name" placeholder="enter name or company...">
+                        <input type="email" id="email" placeholder="enter email...">
+                        <textarea id="message" placeholder="tell us a bit more about your company and needs."></textarea>
+                    </form>
+                </div>
+            </div>
         </div>
-        <p>Add content and components here.</p>
+        <%- include('../components/footer') %>
     </body>
 </html>

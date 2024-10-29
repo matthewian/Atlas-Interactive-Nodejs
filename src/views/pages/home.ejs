@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Atlas Sage</title>
-        <link rel="stylesheet" href="styles/app.css">
+        <%- include('../components/head') %>
+        <title>Atlas Sage</title>        
     </head>
     <body>
         <%- include('../components/navigation') %>
-        <div class="hero hero-image" style="background-image: url('images/buildings_landscape.jpg');">
-            <div class="hero-inner">
-                <h1>Atlas Sage Interactive</h1>
-                <h2>Discover your websites destination</h2>
+        <div class="home page">
+            <div class="hero">
+                <div class="hero-content padding">
+                    <h1>Atlas Sage Designs</h1>
+                    <h2>Discover your websites destination</h2>
+                    <a class="button" href="/contact">Get Started</a>                
+                </div>
+            </div>
+            <div class="content">
+                <object data="images/map-arrow-up.svg" type="image/svg+xml"></object>
             </div>
         </div>
         <%- include('../components/footer') %>

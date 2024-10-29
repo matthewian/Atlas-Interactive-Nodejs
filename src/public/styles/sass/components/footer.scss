@@ -1,0 +1,15 @@
+footer {
+    background-color: #415256;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright {
+        color: #fff;
+
+        &:before {
+            content: "©";
+            margin-right: 0.25em;
+        }
+    }
+}        

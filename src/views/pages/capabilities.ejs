@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Capabilities | Atlas Sage</title>
-        <link rel="stylesheet" href="styles/app.css">
+        <%- include('../components/head') %>
+        <title>Capabilities | Atlas Sage</title>        
     </head>
     <body>
-        <%- include('../components/navigation') %>  
-        <div>
-            <h1>Capabilities</h1>
+        <%- include('../components/navigation') %>
+        <div class="capabilities page">
+            <div class="hero">
+                <div class="hero-content padding">
+                    <h1>Our Capabilities</h1>
+                    <h2>Custom built design, development, & hosting</h2>
+                </div>
+            </div>
+            <div class="content padding">
+                <div>
+                    <h3>Component Driven Design</h3>
+                    <%- include('../components/richtext') %>
+                    <%- include('../components/accordion') %>
+                </div>
+                <div>
+                    <h3>Technology & Infrastructure</h3>
+                </div>
+                <div>
+                    <h3>Delivery & Optimization</h3>
+                </div>
+            </div>
         </div>
-        <p>Add content and components here.</p>
+        <%- include('../components/footer') %>
     </body>
 </html>

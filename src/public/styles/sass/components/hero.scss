@@ -1,0 +1,20 @@
+.hero {
+    height: calc(100vh - 170px);
+    display: flex;
+    flex-direction: row;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+    }
+}

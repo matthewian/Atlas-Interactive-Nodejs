@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.5;    
+}
+
+.nav-container {
+    background-color: #415256;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    position: sticky;
+    top: 0;
+}
