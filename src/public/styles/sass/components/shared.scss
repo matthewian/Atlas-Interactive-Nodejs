@@ -18,7 +18,7 @@
 }
 
 .button {
-    color: white;
+    color: #fff;
     background-color: #415256;
     padding: 10px;
     border-radius: 10px;
@@ -26,7 +26,6 @@
     transition: all .22s ease;
     
     &:hover {
-        //color: #fff;
         background-color: #2d393b;
     }
 }
