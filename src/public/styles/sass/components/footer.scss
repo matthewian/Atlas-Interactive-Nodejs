@@ -1,12 +1,15 @@
+@import "../default/theme";
+
 footer {
-    background-color: #415256;
+    //background-color: $black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: $spacing;
 
     .copyright {
-        color: #fff;
+        //color: $white;
 
         &:before {
             content: "©";

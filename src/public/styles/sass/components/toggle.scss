@@ -1,0 +1,76 @@
+@import "../default/theme";
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+
+    input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked + .slider {
+            background-color: $white;
+        }
+
+        &:focus + .slider {
+            box-shadow: 0 0 1px $black;
+        }
+
+        &:checked + .slider:before {
+            -webkit-transform: translateX(18px);
+            -ms-transform: translateX(18px);
+            transform: translateX(18px);
+        }
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 25px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            left: 4px;
+            bottom: 4px;
+            background-color: $black;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+    }
+}
+
+.light-mode {
+    .toggle {
+        input {    
+            &:checked + .slider {
+                background-color: $black;
+            }
+    
+            &:focus + .slider {
+                box-shadow: 0 0 1px $white;
+            }            
+        }
+
+        .slider {
+            background-color: black;
+
+            &:before {
+                background-color: $white;
+            }
+        }
+    }
+}

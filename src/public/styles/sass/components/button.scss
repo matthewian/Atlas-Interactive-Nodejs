@@ -1,0 +1,17 @@
+@import "../default/theme";
+
+.button {
+    color: $black;
+    background-color: $app-gray;
+    margin-top: $spacing;
+    padding: 10px $spacing;
+    border-radius: 25px;
+    text-align: center;
+    transition: all .25s ease;
+    width: fit-content;
+    line-height: 1;
+    
+    &:hover {
+        background-color: $med-gray;
+    }
+}

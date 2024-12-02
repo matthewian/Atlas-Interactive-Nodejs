@@ -1,31 +1,6 @@
-.content {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.padding {
-    padding: 25px;
-}
-
-.component {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+@import "../default/theme";
 
 .container-flex {
     display: flex;
     justify-content: space-between;
-}
-
-.button {
-    color: #fff;
-    background-color: #415256;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    transition: all .22s ease;
-    
-    &:hover {
-        background-color: #2d393b;
-    }
 }
